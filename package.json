@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "NODE_ENV=production NODE_PATH=dist node -r esm dist",
     "start:dev": "NODE_ENV=development NODE_PATH=dist npx nodemon -r esm --watch dist/ dist --inspect dist",
     "build:watch": "tsc --watch"
   },
